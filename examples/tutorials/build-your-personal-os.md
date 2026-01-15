@@ -7,6 +7,7 @@ A hands-on guide to building your own AI-powered productivity system using codin
 Most people use ChatGPT as a chat interface. But AI coding agents give you something more powerful: the ability to build systems that work *for* you, not just *with* you.
 
 Building a Personal OS teaches you AI fundamentals through daily use:
+
 - **Context management** - How do you give an AI the right information?
 - **Agent memory** - How does an AI remember across sessions?
 - **Tool use** - How do agents take actions in the real world?
@@ -18,7 +19,7 @@ When you use your Personal OS daily, the bottlenecks become visceral. You'll int
 
 By the end of this guide, you'll have:
 
-```
+```text
 personal-os/
 ├── AGENTS.md           # Your AI's instructions and personality
 ├── GOALS.md            # Your objectives and priorities
@@ -31,6 +32,7 @@ personal-os/
 ```
 
 This isn't just a folder structure - it's a system where your AI agent:
+
 - Processes messy notes into organized tasks
 - Prioritizes based on your goals
 - Writes in your voice
@@ -50,14 +52,16 @@ No coding experience required. The AI does the coding.
 
 ### Step 1: Clone or Create Your Workspace
 
-**Option A: Use this template**
+#### Option A: Use this template
+
 ```bash
 git clone https://github.com/amanaiproduct/personal-os.git
 cd personal-os
 ./setup.sh
 ```
 
-**Option B: Start from scratch**
+#### Option B: Start from scratch
+
 Create a new folder and open it in your AI coding agent.
 
 ### Step 2: Create AGENTS.md
@@ -133,6 +137,7 @@ Open your AI coding agent in the personal-os folder and say:
 > "Read AGENTS.md and process my backlog"
 
 Watch what happens. The agent should:
+
 1. Read your instructions
 2. Read your backlog
 3. Create task files in Tasks/
@@ -149,6 +154,7 @@ Watch what happens. The agent should:
 The #1 skill in working with AI agents is **giving them the right context**.
 
 Your Personal OS solves this through file structure:
+
 - AGENTS.md = persistent instructions (always loaded)
 - GOALS.md = your priorities (referenced when prioritizing)
 - Knowledge/ = deep context (loaded when relevant)
@@ -171,12 +177,14 @@ AI agents don't remember between sessions. Your Personal OS creates "memory" thr
 ### Concept 3: Tool Use
 
 When you say "create a task," your AI agent:
+
 1. Interprets your intent
 2. Decides to use the "create file" tool
 3. Generates the file content
 4. Writes it to disk
 
 This is the same pattern as any AI product:
+
 - Intent → Tool selection → Execution → Result
 
 Your Personal OS uses simple tools (read/write files), but the pattern scales to APIs, databases, and complex integrations.
@@ -250,6 +258,7 @@ One of the most powerful features: teaching your AI to write like you.
 ### Step 1: Collect Writing Samples
 
 Create `Knowledge/voice-samples/` and add 5-10 examples of your actual writing:
+
 - Emails you sent
 - Posts you published
 - Messages you liked
@@ -263,6 +272,7 @@ Ask your agent:
 ### Step 3: Use It
 
 Now when you ask for any writing task, the agent will:
+
 1. Read your voice guide
 2. Apply your patterns
 3. Draft content that sounds like you
@@ -278,6 +288,7 @@ Your Personal OS can become a team system.
 ### Shared Repository
 
 Put your personal-os in a Git repo. Team members can:
+
 - Share the same AGENTS.md conventions
 - Contribute to Knowledge/
 - Use the same workflow files
@@ -285,6 +296,7 @@ Put your personal-os in a Git repo. Team members can:
 ### Team-Specific Workflows
 
 Create workflows for team processes:
+
 - `workflows/sprint-planning.md`
 - `workflows/incident-response.md`
 - `workflows/onboarding.md`
@@ -292,6 +304,7 @@ Create workflows for team processes:
 ### Knowledge Base
 
 Build a shared Knowledge/ folder with:
+
 - Product specs
 - Architecture docs
 - Decision records
@@ -305,7 +318,7 @@ The AI becomes a team member that knows your institutional knowledge.
 
 After using your Personal OS daily, you'll develop intuition for how AI products work.
 
-### Every AI Product Has:
+### Every AI Product Has
 
 1. **Context** - What information does it have access to?
 2. **Instructions** - What is it told to do? (system prompt)
@@ -313,7 +326,7 @@ After using your Personal OS daily, you'll develop intuition for how AI products
 4. **Memory** - How does it persist information?
 5. **Orchestration** - How does it decide what to do?
 
-### When You See a New AI Product, Ask:
+### When You See a New AI Product, Ask
 
 - "Where's the context coming from?"
 - "What's in the system prompt?"
@@ -321,7 +334,7 @@ After using your Personal OS daily, you'll develop intuition for how AI products
 - "How is it storing state?"
 - "Is it one agent or multiple?"
 
-### You've Already Built These:
+### You've Already Built These
 
 | Concept | In Your Personal OS |
 |---------|---------------------|
